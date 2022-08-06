@@ -1,53 +1,187 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
     margin: 0;
     padding: 0;
-}
-.body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* top-section */
 .top-section {
     display: flex;
     height: 645px;
-    margin-top: 50px;
-    margin-left: 140px;
-    margin-right: 140px;
-    padding-top: 35px;
+    margin: 50px 140px 0px 140px;
+    padding: 0px 30px 0 40px;
     border-radius: 35px;
     background: rgb(27, 26, 26);
-   
+
 }
 
 .top-section-text {
     width: 100%;
-    padding-top: 65px;
-    padding-left: 75px;
-    color: aliceblue;
+    padding: 145px 70px 0px 100px;
+    color: white;
 }
-.top-section-text h1{
-    font-size: 70px;
+
+.top-section-text h1 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
 }
-.top-section-text p{
-    font-size: 35px;
+
+.top-section-text p {
+    font-size: 20px;
+    line-height: 30px;
     padding-top: 25px;
     padding-bottom: 25px;
 }
-.top-section-text button{
+
+.top-section-text button {
     background-color: rgb(249, 65, 32);
     padding: 15px;
     border-radius: 7px;
 }
-.top-section-text button a{
+
+.top-section-text button a {
     text-decoration: none;
     color: aliceblue;
     font-size: 20px;
 
 }
-.sidebar{
+
+.top-section-text-button :hover {
+    background: #e41212;
+    box-shadow: 0px 2px 8px #e41212;
+}
+
+.top-section img {
+    height: 100%;
+    margin-right: 100px;
+}
+
+/* sceond section */
+.sceond-section {
+    margin: 100px 0px 100px 140px;
+    display: flex;
+}
+
+.side-menu {
+    width: 350px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+
+}
+
+.manu-button {
+    width: 270px;
+    height: 80px;
+    text-align: center;
+    line-height: 85px;
+    background-color: white;
+    border-radius: 14px;
+}
+.manu-button:hover {
+    box-shadow: 1px 1px 5px aliceblue;
+}
+.blog-link-button {
+    background: #DD0000;
+}
+
+.manu-button a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    padding: 30px;
+}
+
+#blog-link {
+    color: aliceblue;
+}
+
+.match-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     padding-left: 20px;
 }
 
-.top-section img{
-    height: 100%;
-    margin-right: 100px;
+.blog {
+    width: 330px;
+    height: 362px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog-info {
+    padding-top: 10px 15px 15px 15px;
+}
+
+.blog-button {
+    width: 100px;
+    height: 30px;
+    margin: 10px 0px 0px 15px ;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 32px;
+}
+.blog-button:hover{
+    background-color: aliceblue;
+}
+.blog-info {
+    padding: 10px 15px 15px 15px;
+}
+
+.blog-button a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #161616;
+    font-weight: 500;
+    display: block;
+}
+
+.blog-info h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+
+.icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.icons div {
+    margin-right: 30px;
+    font-size: 16px;
+    color: black;
+}
+
+.icons i {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.view-all-button{
+    display: none
+}
+
+footer{
+    width: 1600px;
+    height: 440px;
+    background-color: #161616;
+}
+footer p{
+    
+    color: antiquewhite;
 }
