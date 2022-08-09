@@ -184,6 +184,9 @@ main {
     margin-right: 5px;
     margin-bottom: 10px;
 }
+.view-button{
+    display: none;
+}
 
 /********* footer *******/
 footer {
@@ -309,6 +312,21 @@ ul li a {
     .match-blogs {
         grid-template-columns: repeat(1, 1fr);
     }
+    .view-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .view-button a{
+        text-decoration: none;
+        margin: 30px;
+        padding: 20px 30px 20px 30px;
+        color: #dbdbdb;
+        background-color: #DD0000;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
 
     footer {
         height: 700px;
@@ -391,6 +409,21 @@ ul li a {
 
     .match-blogs {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .view-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .view-button a{
+        text-decoration: none;
+        margin: 30px;
+        padding: 20px 30px 20px 30px;
+        color: #dbdbdb;
+        background-color: #DD0000;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 600;
     }
 
     footer {
