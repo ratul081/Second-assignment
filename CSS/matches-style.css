@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    padding: 3% 5% 0 5%;
+    padding: 2% 5% 0 5%;
 }
 
 /* top-section */
@@ -17,11 +17,11 @@ main {
     height: 550px;
     border-radius: 30px;
     padding: 20px 50px 0 60px;
-    background: #222223;
+    background: #232326;
 }
 
 .top-section-text {
-    width: 500px;
+    width: 800px;
     color: white;
     padding-bottom: 40px;
 }
@@ -62,7 +62,10 @@ main {
 }
 
 .top-section img {
-    width: 530px;
+    width: 400px;
+    height: 550px;
+    padding-right: 50px;
+
 }
 
 /* sceond section */
@@ -75,7 +78,7 @@ main {
 .side-menu {
     width: 300px;
     height: 350px;
-    background-color: black;
+    background-color: rgb(3, 59, 148);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -107,82 +110,47 @@ main {
     color: black;
     font-size: 20px;
     font-weight: 500;
-    padding: 30px;
+    margin: 30px;
 }
 
 #blog-link {
     color: aliceblue;
 }
 
-.match-blogs {
+.matches {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
-    grid-row-gap: 30px;
+    grid-row-gap: 20px;
 }
 
-.blog {
-    width: 330px;
-    height: 362px;
+.match {
+    width: 350px;
+    height: 220px;
     border: 1px solid #dbdbdb;
     border-radius: 10px;
 }
 
-.blog img {
-    width: 100%;
-}
-
-.blog-info {
-    padding: 10px 15px 15px 15px;
-}
-
-.blog-button {
-    width: 100px;
-    height: 30px;
-    margin: 10px 0px 0px 15px;
-    border: 1px solid #969696;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 32px;
-}
-
-.blog-button:hover {
-    background-color: aliceblue;
-}
-
-.blog-info {
-    padding: 10px 15px 15px 15px;
-}
-
-.blog-button a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #161616;
-    font-weight: 500;
-    display: block;
-}
-
-.blog-info h4 {
-    font-size: 17px;
-    font-weight: 600;
-    margin: 10px 0 0 0;
-}
-
-.icons {
+.team {
     display: flex;
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
-.icons div {
-    margin-right: 30px;
-    font-size: 16px;
-    color: black;
+.team img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
 }
 
-.icons i {
-    margin-right: 5px;
-    margin-bottom: 10px;
+.match-info {
+    text-align: center;
+    line-height: 20px;
 }
+
+
 
 /********* footer *******/
 footer {
@@ -208,13 +176,15 @@ footer hr {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0%;
 }
 
 .links ul>li>a {
     text-decoration: none;
     color: white;
-    padding: 0px 50px 0px 10px;
+    margin: 0px 30px 0px 30px;
 }
 
 .links ul>li>a :hover {
@@ -231,22 +201,24 @@ footer hr {
 .social-links ul>li>a {
     text-decoration: none;
     color: white;
-    padding: 0px 30px 0px 25px;
+    margin: 0px 30px 0px 20px;
 }
 
 ul li a {
     display: block;
 }
 
-.links ul li a:hover, .links ul li a:focus {
+.links ul li a:hover,
+.links ul li a:focus {
     color: red;
 }
 
 /* Media quarees */
 /* // Small devices (576px and up) */
-@media screen and (max-width:577px) and (max-width:768px) {
+@media screen and (max-width:577px) {
     .top-section {
         flex-direction: column;
+        height: auto;
     }
 
     .top-section-text {
@@ -275,14 +247,17 @@ ul li a {
         margin-bottom: 20px;
     }
 
+
     .top-section img {
-        width: 226px;
+        width: 200px;
+        height: 320px;
     }
 
     .sceond-section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 50px 0px 50px 0px;
 
     }
 
@@ -293,17 +268,18 @@ ul li a {
     .menu-button {
         border: 1px solid rgb(70, 80, 80);
     }
-    .upcoming-match{
+
+    .upcoming-match {
         padding: 0px 40px 0px 40px;
     }
 
-    .match-blogs {
+    .matches {
         grid-template-columns: repeat(1, 1fr);
     }
 
     footer {
-        height: 700px;
-        padding: 0px;
+        width: 100%;
+        height: auto;
     }
 
     .links>ul {
@@ -313,7 +289,7 @@ ul li a {
 
     .links>ul>li {
         text-align: center;
-        padding: 0px 0px 30px 0px;
+        margin: 0px 0px 40px 0px;
     }
 
     .social-links>ul {
@@ -332,10 +308,11 @@ ul li a {
         color: #f9f9fa;
     }
 }
+
 /* Tablet view */
-@media screen and (min-width:769px) and (max-width: 992px){
+@media screen and (min-width:769px) and (max-width: 992px) {
     .top-section {
-        height: 398px;
+        height: 380px;
         padding: 20px 20px 0 40px;
     }
 
@@ -355,7 +332,9 @@ ul li a {
     }
 
     .top-section img {
-        width: 366px;
+        width: 280px;
+        height: 370px;
+        margin-top: 15px;
     }
 
     .sceond-section {
@@ -374,16 +353,17 @@ ul li a {
     .menu-button {
         border: 1px solid rgb(70, 80, 80);
     }
+
     .menu-button a {
         font-size: 16px;
     }
 
-    .match-blogs {
+    .matches {
         grid-template-columns: repeat(2, 1fr);
     }
 
     footer {
-        height: 500px;
+        height: 25em;
     }
 
     .links>ul {
@@ -394,11 +374,12 @@ ul li a {
 
     .links>ul>li {
         text-align: center;
-        padding: 0px 0px 40px 0px;
+        padding: 0px 0px 30px 0px;
     }
 
     .social-links>ul {
-        padding: 0px;
+        margin-top: 40px;
+
     }
 
     .social-links>ul>li {
@@ -408,8 +389,7 @@ ul li a {
 
     .social-links>ul>li>a {
         font-size: 25px;
-        line-height: 20px;
+        line-height: 10px;
         color: #f9f9fa;
     }
 }
-
