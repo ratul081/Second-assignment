@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    padding: 2% 5% 0 5%;
+    padding: 3% 5% 0 5%;
 }
 
 /* top-section */
@@ -17,7 +17,7 @@ main {
     height: 550px;
     border-radius: 30px;
     padding: 20px 50px 0 60px;
-    background: #232326;
+    background: #222223;
 }
 
 .top-section-text {
@@ -63,7 +63,6 @@ main {
 
 .top-section img {
     width: 530px;
-    height: auto;
 }
 
 /* sceond section */
@@ -215,7 +214,7 @@ footer hr {
 .links ul>li>a {
     text-decoration: none;
     color: white;
-    margin: 0px 50px 0px 10px;
+    padding: 0px 50px 0px 10px;
 }
 
 .links ul>li>a :hover {
@@ -239,17 +238,15 @@ ul li a {
     display: block;
 }
 
-.links ul li a:hover,
-.links ul li a:focus {
+.links ul li a:hover, .links ul li a:focus {
     color: red;
 }
 
 /* Media quarees */
 /* // Small devices (576px and up) */
-@media screen and (max-width:577px) {
+@media screen and (max-width:577px) and (max-width:768px) {
     .top-section {
         flex-direction: column;
-        height: auto;
     }
 
     .top-section-text {
@@ -277,18 +274,15 @@ ul li a {
         text-align: center;
         margin-bottom: 20px;
     }
-     
 
     .top-section img {
-        width:100%;
-        height: auto;
+        width: 226px;
     }
 
     .sceond-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 50px 0px 50px 0px;
 
     }
 
@@ -299,8 +293,7 @@ ul li a {
     .menu-button {
         border: 1px solid rgb(70, 80, 80);
     }
-
-    .upcoming-match {
+    .upcoming-match{
         padding: 0px 40px 0px 40px;
     }
 
@@ -339,11 +332,10 @@ ul li a {
         color: #f9f9fa;
     }
 }
-
-                /* Tablet view */
-@media screen and (min-width:769px) and (max-width: 992px) {
+/* Tablet view */
+@media screen and (min-width:769px) and (max-width: 992px){
     .top-section {
-        height: 380px;
+        height: 398px;
         padding: 20px 20px 0 40px;
     }
 
@@ -382,7 +374,6 @@ ul li a {
     .menu-button {
         border: 1px solid rgb(70, 80, 80);
     }
-
     .menu-button a {
         font-size: 16px;
     }
@@ -421,3 +412,4 @@ ul li a {
         color: #f9f9fa;
     }
 }
+
